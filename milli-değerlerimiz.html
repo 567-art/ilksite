@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yİ - Milli Değerlerimiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .footer-content {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* styles.css dosyasında */
+
+        .articles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        article {
+
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .büyükresimler {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        article h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* styles.css dosyasında */
+
+        .article-info {
+            flex: 1;
+            padding-left: 15px;
+        }
+
+        article h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        article a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            border-bottom: 2px solid #3498db;
+            transition: border-bottom 0.3s ease;
+        }
+
+        article a:hover {
+            border-bottom: 2px solid #2980b9;
+        }
+
+        /* styles.css dosyasında */
+
+        /* navbar */
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar-M-K-Abayrağı {
+            width: 25px;
+            height: 20px;
+            float: left;
+            margin-right: 25px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .navbar-h1 {
+            font-size: 20px;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgb(39, 144, 154);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        /* kartlar */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        /* tam ekran butonlar */
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            margin: 12%;
+            padding: 1%;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #c40000;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 30px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 16px
+            }
+
+            .overlay .closebtn {
+                font-size: 24px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        .resimler {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="resimler/iconlar/favicon.png" alt="Yeşilyurt İmparatorluğu">
+            <h1>Milli Değerlerimiz</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html"><i class="fa-solid fa-home"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="resimler/atatürk resmi1.jpg" alt="">
+                <h1>Mustafa Kemal Atatürk</h1>
+                <div class="card-content">
+                    <p>
+                        Mustafa Kemal Atatürk 1881 yılında Selânik'te Kocakasım Mahallesi, Islâhhâne Caddesi'ndeki üç
+                        katlı pembe evde doğdu. Babası Ali Rıza Efendi, annesi Zübeyde Hanım'dır. Baba tarafından dedesi
+                        Hafız Ahmet Efendi XIV-XV. yüzyıllarda Konya ve Aydın'dan Makedonya'ya yerleştirilmiş Kocacık
+                        Yörüklerindendir. Annesi Zübeyde Hanım ise Selânik yakınlarındaki Langaza kasabasına yerleşmiş
+                        eski bir Türk ailesinin kızıdır. Milis subaylığı, evkaf katipliği ve kereste ticareti yapan Ali
+                        Rıza Efendi, 1871 yılında Zübeyde Hanım'la evlendi. Atatürk'ün beş kardeşinden dördü küçük
+                        yaşlarda öldü, sadece Makbule (Atadan) 1956 yılına değin yaşadı.
+                    </p>
+                    <div id="M-K-AOverlay" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeM_K_ANav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="https://tr.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk"> Wikipedia kaynağı
+                                için Tıklayın</a>
+                            <a href="https://islamansiklopedisi.org.tr/mustafa-kemal-ataturk">TDV İslam Ansikopedisi
+                                kaynağı
+                                için tıklayın</a>
+                            <a href="https://www.aa.com.tr/tr/pg/foto-galeri/anadolu-ajansi-arsivinden-ataturk/0">
+                                Anadolu ajans kaynağı için tıklayın </a>
+                            <a href="https://atam.gov.tr/wp-content/uploads/T%C3%BCm-Eser1.pdf">prof. dr. abdurrahman
+                                çaycı pdf'si için tıklayın</a>
+                            <a
+                                href="https://www.pikarekoleji.com/mustafa-kemal-ataturk-un-hayati/mustafa-kemal-ataturk-un-hayati.html">Pikare
+                                Eğitim Kurumları Kaynağı için tıklayın</a>
+                            <a href="https://www.ktb.gov.tr/TR-96300/ataturk39un-hayati.html">T.C. Kültür ve turizm
+                                bakanlığı kaynağı için tıklayın</a>
+                            <a href="http://www.yalova.gov.tr/ataturkun-hayati">yalova valiliği kaynağı için
+                                tıklayın</a>
+                            <a
+                                href="https://caldiran.meb.gov.tr/meb_iys_dosyalar/2021_03/23224739_Yeni_Microsoft_Word_Belgesi_2-donuYturuldu.pdf">çaldıran
+                                ilçe milli eğitim müdürlüğü kaynağı için tıklayın PDF</a>
+                            <a href="https://www.turkav.org.tr/ataturkun-hayati/">TÜRKAV kaynağı için tıklayın</a>
+                            <a
+                                href="https://webftp.gazi.edu.tr/kolej/ysf/pdf/AtaturkKosesi/ATAT%C3%9CRK'%C3%9CN%20HAYATI.pdf">Gazi
+                                Ün. kaynağı için tıklayın PDF</a>
+                            <a href="https://aiit.aku.edu.tr/ataturkun-hayati/">Afyon Kocatepe Ün. kaynağı için
+                                tıklayın</a>
+                            <a href="http://www.saricam.gov.tr/ataturkun-hayati">Sarıçam Kaymakamlığı kaynağı için
+                                tıklayın</a>
+                            <a
+                                href="https://itoteml.meb.k12.tr/meb_iys_dosyalar/34/25/232513/dosyalar/2019_10/30132956_Ataturkun_kYsaca_hayatY.pdf?CHK=66f3000f47d4bb1edb5dfe51502984a6">İstanbul
+                                Ticaret Odası MTAL kaynağı için tıklayın PDF</a>
+                            <a href="https://www.tedcorlu.k12.tr/ataturk-kosesi/">TED çorlu koleji kaynağı için
+                                tıklayın</a>
+                            <a href="https://evyapokullari.k12.tr/ataturkun-hayati/">nürüvvet evyap okulları kaynağı
+                                için tıklayın</a>
+                            <a href="https://atauni.edu.tr/yuklemeler/78fff7d1786e946f40a8d17728b43037.pdf">atatürk ün.
+                                sosyal bilimler ensitüsü eğitim birimleri ana bilim dalı; ahmet gökhan yazıcı
+                                yüks. lis. tezi için tıklayın. PDF</a>
+                            <a href="https://kho.msu.edu.tr/hakkinda/harbiyeli_ataturk/ogrenim_hayati.html">MS ÜN. kara
+                                harp okulu kaynağı için tıklayın</a>
+                            <a href="https://www.tanokullari.com/kurumsal/ataturkun-hayati/">Tan Okulları kaynağı için
+                                tıklayın.</a>
+                            <a href="http://kirikkale.gov.tr/hayati">Kırıkkale valiliği kaynağı için tıklayın.</a>
+                            <a href="https://www.erenkoykoleji.k12.tr/ataturk-hayati">Eren Köy Koleji kaynağı için
+                                tıklayın</a>
+                            <a href="https://www.tedsamsun.k12.tr/ataturk-kosesi/ataturk-un-hayati/">TED Samsun Koleji
+                                kaynağı için tıklayın</a>
+                            <a
+                                href="https://www.bahcelievler.istanbul/bahcelievler-detay/182/107/Mustafa-Kemal-Ataturkun-Hayati/">bahçelievler
+                                bel.</a>
+                            <a href="https://eodev.com/gorev/8452509">E-odev.com kaynağı için tıklayın</a>
+
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openM_K_ANav()">&#9776; </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="resimler/sütçüiamamrsmi1.png" alt="" width="200px" class="resimler">
+                <h1>Sütçü İmam</h1>
+                <div class="card-content">
+                    <p>
+                        Sütçü İmamın hayatını okumak için üç çizgiye tıklayın. Kısaca sütçü imam milli mücadele
+                        döneminde gavurları vatanımızdan kovmuştur. Bunlar fıransızlar ve ermenilerdir. sütçü imamı asla
+                        unutmayacağız. allah rahmet eylesin.
+                    </p>
+                    <div id="SütçüİmamOverlay" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeSütçüİmamNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="https://tr.wikipedia.org/wiki/S%C3%BCt%C3%A7%C3%BC_%C4%B0mam"> Wikipedia kaynağı
+                                için Tıklayın</a>
+                            <a href="https://ataturkansiklopedisi.gov.tr/bilgi/sutcu-imam-1871-1922/">Atatürk
+                                Ansikopedisi kaynağı
+                                için tıklayın</a>
+                            <a href="https://kahramanmaras.bel.tr/sutcu-imam-olayi">Kahramanmaraş büyük şehir bel.
+                                kaynağı için tıklayın</a>
+                            <a
+                                href="https://www.aa.com.tr/tr/portre/milli-mucadelenin-kahramanlarindan-sutcu-imam-hafizalardan-silinmiyor/2746897">
+                                Anadolu ajans kaynağı için tıklayın </a>
+                            <a href="https://www.sutcuimam.com.tr/sutcu-imam"> Sütçüimam.com.tr kaynağı için
+                                tıklayın</a>
+
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openSütçüİmamNav()">&#9776; </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="resimler/karagözilehacivatresmi1.png" alt="" width="200px" class="resimler">
+                <h1>Karagöz İle Hacivat</h1>
+                <div class="card-content">
+                    <p>
+                        Bu iki karakterin gerçekten yaşayıp yaşamadığı, yaşadıysa nerede nasıl yaşadığı kesin olarak
+                        bilinmemektedir. Anlatılanlar rivayete dayanır, zira gerçekten yaşamış olsalar bile büyük
+                        ihtimalle bahsedilen dönemde tarih kitaplarına girecek kadar önemli bulunmamışlardır. Halk
+                        bilimcileri Karagöz'ün bazı oyunlarda Çingene olduğunu kendi ağzıyla itiraf etmesi, Bulgar
+                        gaydası çalması ve Evliya Çelebi'nin tanıklığına dayanarak Bizans imparatoru Konstantin'in
+                        Çingene seyisi Sofyozlu Bali Çelebi olduğunu ileri sürmektedir.
+                    </p>
+                    <div id="karagözilehacivatOverlay" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closekaragözilehacivatNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="https://tr.wikipedia.org/wiki/Karag%C3%B6z_ve_Hacivat">Vikipedia kaynağı için
+                                tıklayın</a>
+                            <a href="https://balatoyuncakmuzesi.com/karagoz-ve-hacivat/">Balad Oyuncak Müzesi kaynağı
+                                için tıklayın</a>
+                            <a href="https://www.cocukakademi.com/blog/karagoz-ve-hacivat-konusmalari">Çocuk Akad.
+                                Kaynağı için Tıklayın</a>
+                            <a href="https://www.karagoz.net/">Karagöz.net kaynağı için tıklayın</a>
+                            <a href="https://www.suatveral.com/karakterler/">Hayali Suat VERAL kaynağı için tıklayın</a>
+                            <a
+                                href="https://sanat.ykykultur.com.tr/koleksiyonlar/golge-oyunu-karagoz-hacivat-koleksiyonu">Yapı
+                                Kredi Sanat Ve Kültür yay. kaynağı için tıklayın</a>
+                            <a href="https://aregem.ktb.gov.tr/TR-12744/karagoz.html">araş. ve eğit. genel müdürlüğü
+                                kaynağı için tıklayın</a>
+                            <a href="https://www.turkedebiyati.org/karagoz-hacivat-oyunu/ ">Türk Edebiyatı.org kaynağı
+                                için tıklayın</a>
+                            <a
+                                href="https://istanbulhacivatkaragoz.com/hacivat-karagoz-golge-oyununun-tarihcesi-ve-gelisim-sureci/6600/">istanbul
+                                Hacivat karagoz.com kaynağı için tıklayın</a>
+                            <a href="https://www.kulturportali.gov.tr/turkiye/bursa/kulturatlasi/karagoz-ve-hacivat">Kültür
+                                Portalı kaynağı için tıklayın</a>
+                            <a href="https://masallaroku.org/karagoz-ve-hacivat/">masallar oku.org kaynağı için
+                                tıklayın</a>
+                            <a href="https://www.eyupoyuncakcisi.com/tr/hacivat-ve-karagoz-atolyesi">geleneksel eyüp
+                                oyuncakçısı kaynağı için tıklayın</a>
+                            <a href="https://www.gotobursa.com.tr/tr/icerik/hacivat-karagoz-golge-oyunlari-189/">Bursa
+                                Turizm Portalı kaynağı için tıklayın</a>
+                            <a href="https://www.akra.media/Medya/ProgramDetay/756/karagoz-hacivat">Akra Medya kaynağı
+                                için tıklayın</a>
+                            <a href="https://istanbulsanatlaricarsisi.com.tr/sanat-dallari/karagoz-hacivat-tasvirleri/">İstanbul
+                                Sanatları Çarşısı kaynağı için tıklayın</a>
+                            <a
+                                href="https://bursaolgunlasma.meb.k12.tr/meb_iys_dosyalar/16/15/966823/dosyalar/2018_10/08140044_HACIVAT_YLE_KARAGYZ.pdf?CHK=0ca68dd1f9c8d0ae9e1c0f590a2a9fe3">
+                                Bursa Olgunlaşma ensitüsü kaynağı için tıklayın</a>
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openkaragözilehacivatNav()">&#9776; </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="resimler/mevlana.png" alt="" width="200px" class="resimler">
+                <h1>Mevlana</h1>
+                <div class="card-content">
+                    <p>
+                    </p>
+                    <div id="MevlanaOverlay" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeMevlanaNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a
+                                href="https://tr.wikipedia.org/wiki/Mevl%C3%A2n%C3%A2_Cel%C3%A2ledd%C3%AEn-i_R%C3%BBm%C3%AE">Wikipedia kaynağı için tıklayın</a>
+                                
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openMavlanaNav()">&#9776; </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function openM_K_ANav() {
+            document.getElementById("M-K-AOverlay").style.width = "100%";
+        }
+
+        function closeM_K_ANav() {
+            document.getElementById("M-K-AOverlay").style.width = "0%";
+        }
+
+
+
+
+        function openSütçüİmamNav() {
+            document.getElementById("SütçüİmamOverlay").style.width = "100%";
+        }
+
+        function closeSütçüİmamNav() {
+            document.getElementById("SütçüİmamOverlay").style.width = "0%";
+        }
+
+
+        function openkaragözilehacivatNav() {
+            document.getElementById("karagözilehacivatOverlay").style.width = "100%";
+        }
+        function closekaragözilehacivatNav() {
+            document.getElementById("karagözilehacivatOverlay").style.width = "0%";
+        }
+
+
+        function openMevlanaNav() {
+            document.getElementById("MevlanaOverlay").style.width = "100%";
+        }
+        function closeMevlanaNav() {
+            document.getElementById("MevlanaOverlay").style.width = "0%";
+        }  
+    </script>
+
+</body>
+
+</html>
